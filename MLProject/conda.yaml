@@ -1,12 +1,11 @@
-name: loan_retraining_env
+name: mlflow-env
 channels:
-  - conda-forge
   - defaults
 dependencies:
   - python=3.11
   - pip
   - pip:
-    - mlflow==2.19.0
-    - scikit-learn
-    - pandas
-    - numpy
+      - mlflow
+      - scikit-learn
+      - pandas
+      - numpy
