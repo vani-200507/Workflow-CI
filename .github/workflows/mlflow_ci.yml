@@ -32,7 +32,7 @@ jobs:
 
       - name: Run MLflow Project Retraining
         run: |
-          cd Workflow-CI/MLProject
+          cd MLProject
           mlflow run . --no-conda -P n_estimators=120 -P max_depth=6
 
       # Optional steps for Advanced (Build & Push Docker image to Docker Hub and upload artifacts)
