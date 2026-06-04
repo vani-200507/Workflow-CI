@@ -1,4 +1,5 @@
-name: Loan_Approval_Retraining
+name: loan_ci_project
+
 conda_env: conda.yaml
 
 entry_points:
