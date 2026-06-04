@@ -1,0 +1,11 @@
+https://hub.docker.com/r/vanensiambiliyora/loan-approval-retraining
+
+Instruksi Setup Docker Hub (Kriteria 3 - Advanced):
+1. Buat akun di Docker Hub (https://hub.docker.com).
+2. Buat repositori publik dengan nama 'loan-approval-retraining'.
+3. Simpan tautan Docker Hub Anda di baris pertama file ini.
+4. Anda dapat membangun Docker Image dari MLflow Project ini menggunakan perintah:
+   mlflow models build-docker -m "runs:/<RUN_ID>/tuned_random_forest_model" -n "vanensiambiliyora/loan-approval-retraining:latest"
+5. Dorong docker image tersebut ke Docker Hub:
+   docker push vanensiambiliyora/loan-approval-retraining:latest
+6. Di GitHub Actions workflow, Anda dapat mengotomatiskan langkah build dan push ini dengan menyimpan DOCKER_USERNAME dan DOCKER_PASSWORD di GitHub Secrets.
