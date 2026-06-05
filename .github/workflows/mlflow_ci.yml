@@ -28,3 +28,4 @@ jobs:
         run: |
           cd MLProject
           mlflow run . --env-manager=local -P n_estimators=120 -P max_depth=6
+          
