@@ -68,7 +68,7 @@ def train_model(n_estimators, max_depth):
     mlflow.log_param("max_depth", max_depth)
     mlflow.log_metric("accuracy", accuracy)
 
-    mlflow.sklearn.log_model(model, "model")
+    
 
     print(f"Model trained successfully! Accuracy: {accuracy:.4f}")
     print("Classification Report:")
